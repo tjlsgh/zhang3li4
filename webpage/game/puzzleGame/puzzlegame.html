@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>拼图游戏</title>
+        <link href="./puzzlegame.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="./puzzlegame.js"></script>
+    </head>
+    <body>
+        <!-- 最外面的盒子 -->
+        <div id="bigBox">
+            <!-- 移动区域 -->
+            <div id="moveArea">
+                <div id="a1" onclick="move(1)">1</div>
+                <div id="a2" onclick="move(2)">2</div>
+                <div id="a3" onclick="move(3)">3</div>
+                <div id="a4" onclick="move(4)">4</div>
+                <div id="a5" onclick="move(5)">5</div>
+                <div id="a6" onclick="move(6)">6</div>
+                <div id="a7" onclick="move(7)">7</div>
+                <div id="a8" onclick="move(8)">8</div>
+            </div>
+            <!-- 控制区域 -->
+            <div id="controlArea">
+                <p>
+                    <rowspan id="start" onclick="start()">START</rowspan>
+                    <rowspan id="restart" onclick="restart()">RESTART</rowspan>
+                </p>
+                <p>
+                    <rowspan id="timeCost">用时</rowspan>
+                    <rowspan id="time"></rowspan>
+                </p>
+            </div>
+        </div>>
+    </body>
+</html>

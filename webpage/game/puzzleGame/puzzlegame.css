@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/* 全屏 */
+body{
+    width: 100%;
+    height: 100%;
+}
+/*  */
+#bigBox{
+    position: relative;
+    width: 620px;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 1px;
+}
+/* 移动区域 */
+#moveArea{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: gray;
+    box-shadow: 0 0 10px gray;
+}
+
+#moveArea div{
+    position: absolute;
+    width: 149px;
+    height: 149px;
+    box-shadow: 1px 1px 2px #666;
+    background-color: #20a6fa;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    line-height: 150px;
+    cursor: pointer;
+    -webkit-transition: 0.3s; /*浏览器前缀，兼容其他浏览器 chrome*/
+    -moz-transition: 0.3s; /*firefox*/
+    -ms-transition: 0.3s; /*ie*/
+    -o-transition: 0.3s; /*opera*/
+    transition: 0.3s;
+}
+
+#moveArea div:hover{
+    color: #ffe171;
+}
+/* 控制区域 */
+#controlArea{
+    width: 150px;
+    height: 450px;
+    display: inline-block;
+    float: right;
+}
+
+#controlaArea rowspan{
+    height: 25px;
+    font-size: 15px;
+    color: #222;
+    margin-top: 10px;
+}
+
+#start,#restart,#time,#timeCost{
+    display: inline-block;
+    font-size: 22px;
+    width: 110px;
+    height: 30px;
+    background-color: #20a6fa;
+    color: #ffe171;
+    text-shadow: 1px 1px 2px #ffe171;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #4c98f5;
+    text-align: center;
+    cursor: pointer;
+}
+#restart,#timeCost,#time,#timeCost{
+    margin-top: 10px;
+}
+/* 设置位置 */
+#a1 {
+    left: 0px;
+}
+#a2 {
+    left: 150px;
+}
+#a3 {
+    left: 300px;
+}
+#a4 {
+    top: 150px;
+}
+#a5 {
+    top: 150px;
+    left: 150px;
+}
+#a6 {
+    top: 150px;
+    left: 300px;
+}
+#a7 {
+    top: 300px;
+}
+#a8 {
+    left: 150px;
+    top: 300px;
+}
